@@ -4,10 +4,12 @@ import Navigation from "./Components/Navigation";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AdminDashboard from "./Components/Dashboard/AdminDashboard";
 import NormalDashboard from "./Components/Dashboard/NormalDashboard";
+import Chatbot from "./Components/Chatbot/Chatbot";
 
 function App() {
   return (
     <div className="App">
+      <Chatbot />
       <Navigation />
       <BrowserRouter>
         <Routes>

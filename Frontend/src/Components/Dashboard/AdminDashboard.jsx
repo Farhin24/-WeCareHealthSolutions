@@ -143,7 +143,7 @@ const AdminDashboard = () => {
             />
           </Row>
         </Col>
-        <Col style={{ width: "10px" }}>
+        <Col style={{ width: "5px" }}>
           <Row>
             <h5 className="text-center">Employee Count By Department</h5>
           </Row>
