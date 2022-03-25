@@ -129,38 +129,56 @@ const AdminDashboard = () => {
           <h1 className="text-center">Admin Analytics</h1>
         </Col>
       </Row>
-      <Row>
+
+      <Row style={{ marginBottom: "40px" }}>
         <Col lg="6">
           <Row>
-            <Col lg="6">
+            <Col>
               <h5 className="text-center">Employee Count By Gender</h5>
             </Col>
           </Row>
           <Row>
-            <Pie
-              options={{ maintainAspectRatio: false }}
-              data={employeeCountByGenderdata}
-            />
+            <Col style={{ height: "40vh" }}>
+              <Pie
+                options={{ maintainAspectRatio: false }}
+                data={employeeCountByGenderdata}
+              />
+            </Col>
           </Row>
         </Col>
-        <Col style={{ width: "5px" }}>
+        <Col lg="6">
           <Row>
-            <h5 className="text-center">Employee Count By Department</h5>
+            <Col>
+              <h5 className="text-center">Employee Count By Department</h5>
+            </Col>
           </Row>
           <Row>
-            <Bar options={chartOptions} data={chartData} />
+            <Col style={{ height: "40vh" }}>
+              <Bar options={chartOptions} data={chartData} />
+            </Col>
           </Row>
         </Col>
       </Row>
       <Row>
-        <Col>
+        <Col lg="6">
           <Row>
-            <h5 className="text-center">Total Appointments Booked per month</h5>
+            <Col>
+              <h5 className="text-center">
+                Total Appointments Booked per month
+              </h5>
+            </Col>
           </Row>
+
           <Row>
-            <Line options={appointmentChartOptions} data={apointmentBookdata} />
+            <Col>
+              <Line
+                options={appointmentChartOptions}
+                data={apointmentBookdata}
+              />
+            </Col>
           </Row>
         </Col>
+
         <Col>
           <Row>
             <h5 className="text-center">

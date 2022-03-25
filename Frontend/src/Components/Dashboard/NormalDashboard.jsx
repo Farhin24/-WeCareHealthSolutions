@@ -16,13 +16,10 @@ class NormalDashboard extends Component {
           <Col>
             <h4 className="text-center">Upcomming Appointments</h4>
           </Col>
-          <Col>
-            <h4 className="text-center">Pathalogy Reports</h4>
-          </Col>
         </Row>
 
         <Row>
-          <Col>
+          <div className="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12">
             <Table striped bordered hover responsive>
               <thead>
                 <tr>
@@ -49,8 +46,15 @@ class NormalDashboard extends Component {
                 })}
               </tbody>
             </Table>
-          </Col>
+          </div>
+        </Row>
+        <Row>
           <Col>
+            <h4 className="text-center">Pathalogy Reports</h4>
+          </Col>
+        </Row>
+        <Row>
+          <div className="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12">
             <Col>
               <Table striped bordered hover responsive>
                 <thead>
@@ -79,7 +83,7 @@ class NormalDashboard extends Component {
                 </tbody>
               </Table>
             </Col>
-          </Col>
+          </div>
         </Row>
       </Container>
     );
