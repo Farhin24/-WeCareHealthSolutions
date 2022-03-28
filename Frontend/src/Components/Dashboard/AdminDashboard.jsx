@@ -131,7 +131,7 @@ const AdminDashboard = () => {
       </Row>
 
       <Row style={{ marginBottom: "40px" }}>
-        <Col lg="6">
+        <Col lg="6" style={{ border: "1px solid" }}>
           <Row>
             <Col>
               <h5 className="text-center">Employee Count By Gender</h5>
@@ -146,7 +146,7 @@ const AdminDashboard = () => {
             </Col>
           </Row>
         </Col>
-        <Col lg="6">
+        <Col lg="6" style={{ border: "1px solid" }}>
           <Row>
             <Col>
               <h5 className="text-center">Employee Count By Department</h5>
@@ -160,7 +160,7 @@ const AdminDashboard = () => {
         </Col>
       </Row>
       <Row>
-        <Col lg="6">
+        <Col lg="6" style={{ border: "1px solid" }}>
           <Row>
             <Col>
               <h5 className="text-center">
@@ -179,7 +179,7 @@ const AdminDashboard = () => {
           </Row>
         </Col>
 
-        <Col>
+        <Col style={{ border: "1px solid" }}>
           <Row>
             <h5 className="text-center">
               Vaccine Dose provided in a particular month
